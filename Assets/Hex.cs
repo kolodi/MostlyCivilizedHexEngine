@@ -16,16 +16,33 @@ public class Hex {
         this.S = -(q + r);
     }
 
-    // Q + R + S = 0
-    // S = -(Q + R)
+    /// <summary>
+    /// Column
+    /// </summary>
+    public readonly int Q;
 
-    public readonly int Q;  // Column
-    public readonly int R;  // Row
+    /// <summary>
+    /// Row
+    /// </summary>
+    public readonly int R;
+
+    /// <summary>
+    /// SomeValue = -(Column + Row)
+    /// </summary>
     public readonly int S;
 
     static readonly float WIDTH_MULTIPLIER = Mathf.Sqrt(3) / 2;
 
+    /// <summary>
+    /// Name of the material to pick when drawing
+    /// </summary>
+    public string TestMaterialName;
+
+    /// <summary>
+    /// Hex radius in meters
+    /// </summary>
     float radius = 1f;
+
     bool allowWrapEastWest = true;
     bool allowWrapNorthSouth = false;
 
