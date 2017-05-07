@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Provide reference to the Hex map and hex tile data
+/// to the instantiated hex tile game object
+/// </summary>
 public class HexComponent : MonoBehaviour {
 
     /// <summary>

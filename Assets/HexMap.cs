@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+/// <summary>
+/// Hex map.
+/// Genereate and display hexes map.
+/// </summary>
 public class HexMap : MonoBehaviour, 
     IDragHandler, 
     IBeginDragHandler, 
